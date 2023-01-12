@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png"
+        type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3c52f9b82b.js" crossorigin="anonymous"></script>
+    <title>Módulos</title>
+</head>
+
+<body>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+        * {
+            margin: 0 auto;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        #menu-h {
+            background-color: rgb(255, 255, 255);
+            box-shadow: #0000001c 0px 3px 8px;
+            text-align: center;
+            font-weight: bolder;
+            height: 60px;
+        }
+
+        #menu-h ul {
+            max-width: 800px;
+            list-style: none;
+            padding: 7px 0px 0px 0px;
+        }
+
+        #menu-h ul li {
+            display: inline;
+            font-size: 16px;
+            box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.24);
+        }
+
+        a {
+            color: #666;
+            display:inline-block;
+            margin:10.5px;
+            text-transform:uppercase;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: rgba(0, 0, 0, 0.664);
+        }
+
+        a:after {
+            display:block;
+            content: '';
+            border-bottom: solid 1px #00000081;  
+            transform: scaleX(0);  
+            transition: transform 250ms ease-in-out;
+        }
+
+        a:hover:after { 
+            transform: scaleX(1);
+        }
+
+        @media (max-width:450px) {
+
+            #menu-h ul li {
+            display: inline;
+            font-size: 14px;
+            box-shadow: 1px 0px 0px 0px rgba(0, 0, 0, 0.24);
+            }
+
+            a {
+                color: #666;
+                display:inline-block;
+                margin:10px;
+                text-transform:uppercase;
+                text-decoration: none;
+            }
+        }
+    </style>
+
+    <nav id="menu-h" class="fixed-top">
+        <ul>
+
+            <li><a href="#aaa">M1</a></li>
+
+            <li><a href="#dt7">M2</a></li>
+
+            <li><a href="#dt13">M3</a></li>
+
+            <li><a href="#dt18">M4</a></li>
+
+            <li><a href="#dt23">M5</a></li>
+
+            <li style="box-shadow: none;"><a href="#dt27">PROJETOS</a></li>
+
+        </ul>
+    </nav>
+
+    <div class="container">
+
+        <p id="aaa" style="margin: 50px;">ㅤ</p>
+        
+        <div class="box">
+
+            <p class="modulo">Módulo 1</p>
+            <h1 class=titulo> Operação de Computadores </h1>
+
+            <p class="materia"> Unidade de Orientação para o Trabalho</p>
+            <p class="data"> <span id="in1">16/05/2022</span> - <span id="dt1">25/05/2022</span> <span id="md1"></span>
+            </p>
+
+            <p class="materia"> Informática Básica</p>
+            <p class="data"><span id="in2">17/05/2022</span> - <span id="dt2">12/07/2022</span> <span id="md2"></span>
+            </p>
+
+            <p class="materia"> Instalação e Configuração de Sistemas e Periféricos </p>
+            <p class="data"><span id="in3">27/05/20222</span> - <span id="dt3">22/06/2022</span><span id="md3"></span>
+            </p>
+
+            <p class="materia"> Segurança da Informação e Propriedade Intelectual </p>
+            <p class="data"><span id="in4">24/06/2022</span> - <span id="dt4">04/07/2022</span><span id="md4"></span>
+            </p>
+
+            <p class="materia"> Lógica de Programação e Algoritmos </p>
+            <p class="data"><span id="in5">08/07/2022</span> - <span id="dt5">15/08/2022</span><span id="md5"></span>
+            </p>
+
+            <p class="materia"> Programação Orientada a Objetos </p>
+            <p class="data"><span id="in6">14/07/2022</span> - <span id="dt6">11/08/2022</span><span id="md6"></span>
+            </p>
+
+            <p class="materia"> Lógica Matemática </p>
+            <p class="data"><span id="in7">16/08/2022</span> - <span id="dt7">15/09/2022</span><span id="md7"></span>
+            </p>
+
+        </div>
+        
+        <p style="margin: 50px;"></p>
+
+        <div class="box">
+
+            <p class="modulo" id="ddt2">Módulo 2</p>
+            <h1 class="titulo"> Desen. de Aplicações Web </h1>
+
+            <p class="materia"> Html com Css3 </p>
+            <p class="data"><span id="in8">20/09/2022</span> - <span id="dt8">25/10/2022</span><span id="md8"></span>
+            </p>
+
+            <p class="materia"> Consulta e Gerenciamento de Dados </p>
+            <p class="data"><span id="in9">27/10/2022</span> - <span id="dt9">06/12/2022</span><span id="md9"></span>
+            </p>
+
+            <p class="materia"> Design Responsivo </p>
+            <p class="data"><span id="in10">17/08/2022</span> - <span id="dt10">29/08/2022</span><span id="md10"></span>
+            </p>
+
+            <p class="materia"> Php com Banco de Dados </p>
+            <p class="data"><span id="in11">31/08/2022</span> - <span id="dt11">29/08/2022</span><span id="md11"></span>
+            </p>
+
+            <p class="materia"> Design de Interface e Ux </p>
+            <p class="data"><span id="in12">07/10/2022</span> - <span id="dt13">04/11/2022</span><span id="md13"></span>
+            </p>
+
+            <p class="materia"> Segurança e Versionamento </p>
+            <p class="data"><span id="in13">13/12/2022</span> - <span id="dt12">12/01/2023</span><span id="md12"></span>
+            </p>
+
+        </div>
+        
+        <p style="margin: 50px;"></p>
+
+        <div class="box">
+
+            <p class="modulo" id="ddt3">Módulo 3</p>
+            <h1 class="titulo">Desen. de Sistemas Corporativos</h1>
+
+            <p class="materia"> Analise e Modelagem de Sistemas<span id=""></span></p>
+            <p class="data"><span id="in14">24/01/2023</span> - <span id="dt14">28/02/2023</span><span id="md14"></span>
+            </p>
+
+            <p class="materia"> Linguagem de Programação <span id=""></span></p>
+            <p class="data"><span id="in15">31/10/2022</span> - <span id="dt15">05/12/2022</span><span id="md15"></span>
+            </p>
+
+            <p class="materia"> Ms Project <span id=""></span></p>
+            <p class="data"><span id="in16">07/12/2022</span> - <span id="dt16">06/02/2023</span><span id="md16"></span>
+            </p>
+
+            <p class="materia"> Teste de Software <span id=""></span></p>
+            <p class="data"><span id="in17">13/01/2023</span> - <span id="dt17">03/02/2023</span><span id="md17"></span>
+            </p>
+
+            <p class="materia"> Gerenciamento Agil de Projetos <span id=""></span></p>
+            <p class="data"><span id="in18">02/03/2023</span> - <span id="dt18">20/04/2023</span><span id="md18"></span>
+            </p>
+
+        </div>
+        
+        <p style="margin: 50px;"></p>
+
+        <div class="box">
+
+            <p class="modulo" id="ddt4">Módulo 4</p>
+            <h1 class="titulo"> Suporte de Redes e Serviços de TI </h1>
+
+            <p class="materia"> Network Essentials <span id=""></span></p>
+            <p class="data"><span id="in19">25/04/2023</span> - <span id="dt19">06/07/2023</span><span id="md19"></span>
+            </p>
+
+            <p class="materia"> Software Livre <span id=""></span></p>
+            <p class="data"><span id="in20">11/07/2023</span> - <span id="dt20">24/08/2023</span><span id="md20"></span>
+            </p>
+
+            <p class="materia"> Virtualização de Computadores <span id=""></span></p>
+            <p class="data"><span id="in21">08/02/2023</span> - <span id="dt21">06/03/2023</span><span id="md21"></span>
+            </p>
+
+            <p class="materia"> Administração de Servidores Web <span id=""></span></p>
+            <p class="data"><span id="in22">10/03/2023</span> - <span id="dt22">12/04/2023</span><span id="md22"></span>
+            </p>
+
+            <p class="materia"> Gestão de Serviços de TI <span id=""></span></p>
+            <p class="data"><span id="in23">17/03/2023</span> - <span id="dt23">10/04/2023</span><span id="md23"></span>
+            </p>
+
+        </div>
+        
+        <p style="margin: 50px;"></p>
+
+        <div class="box">
+
+            <p class="modulo" id="ddt5">Módulo 5</p>
+            <h1 class="titulo"> Desen. Mobile e Empreen. Digital </h1>
+
+            <p class="materia"> Linguagem de Script para Web </p>
+            <p class="data"><span id="in24">26/04/2023</span> - <span id="dt24">31/05/2023</span><span id="md24"></span>
+            </p>
+
+            <p class="materia"> Sistema Gerenciador de Conteúdos </p>
+            <p class="data"><span id="in25">02/06/2023</span> - <span id="dt25">23/06/2023</span><span id="md25"></span>
+            </p>
+
+            <p class="materia"> Desen. de App Mobile </p>
+            <p class="data"><span id="in26">26/06/2023</span> - <span id="dt26">11/08/2023</span><span id="md26"></span>
+            </p>
+
+            <p class="materia"> Lean Startups </p>
+            <p class="data"><span id="in27">14/08/2023</span> - <span id="dt27">04/09/2023</span><span id="md27"></span>
+            </p>
+
+        </div>
+        
+        <p style="margin: 50px;"></p>
+
+        <div class="box">
+
+            <h1 class="titulo"> Projetos Integradores </h1>
+
+            <p class="materia"> Criação de um Site Dinâmico </p>
+            <p class="data"><span id="in28">20/12/2022</span> - <span id="dt28">19/01/2023</span><span id="md28"></span>
+            </p>
+
+            <p class="materia"> Desenvolver Sistema Corporativo </p>
+            <p class="data"><span id="in29">06/04/2023</span> - <span id="dt29">20/04/2023</span><span id="md29"></span>
+            </p>
+
+            <p class="materia"> Projetar Infra. de Rede Corp. </p>
+            <p class="data"><span id="in30">14/04/2023</span> - <span id="dt30">29/09/2023</span><span id="md30"></span>
+            </p>
+
+            <p class="materia"> Desenvolver um Produto Inovador </p>
+            <p class="data"><span id="in31">06/09/2023</span> - <span id="dt31">27/09/2023</span><span id="md31"></span>
+            </p>
+
+        </div>
+        <p class="pp">ㅤ</p>
+    </div>
+
+    <footer class="footer">
+        <small>@zwescley</small>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
